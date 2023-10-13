@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Lunch Checker</h1>
+
+      <div class="form-group">
+          <input id="lunch-menu" type="text"
+          placeholder="Liste os ingredientes que voce come no almoço separado por virgula"
+          class="form-control" [(ngModel)]="value">
+      </div>
+      <div class="form-group">
+          <button class="btn btn-default" (click)="check()">Checar se é muito</button>
+      </div>
+      <div class="form-group message">
+        {{resp}}
+      </div>
+</div>
+
+<router-outlet></router-outlet>
